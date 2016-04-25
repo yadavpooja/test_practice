@@ -19,17 +19,11 @@ class Minimum_bal(Bank_account):
 
 
     def withdraw(self,amount):
-        if self.balance < self.min_bal:
-            print "sorry low bal"
+        if self.balance <= self.min_bal:
+            return "sorry low bal"
         else:
-            Bank_account.withdraw(self,amount)
+            return Bank_account.withdraw(self,amount)
 
 
-a = Bank_account()
-#b = Minimum_bal(500)
-#print b.withdraw(100)
-#print a.withdraw(100) 
-#a = Minimum_bal(200)
-print a.deposit(100)
-print a.withdraw(40)
-
+b = Minimum_bal(100)
+print b.withdraw(50)
