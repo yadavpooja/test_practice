@@ -7,7 +7,7 @@ class TestMethods(unittest.TestCase):
     def test_upper(self):
         self.assertEqual(self.foo.upper(),'HELLO WORLD')
 
-    def test_isupper(self):
+    def test_islower(self):
         self.assertTrue(self.foo.islower())
         self.assertFalse(self.foo.isupper())
 
