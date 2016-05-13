@@ -6,6 +6,7 @@ class Testfixtures(unittest.TestCase):
         self.fixture = range(1,6)
 
     def test(self):
+        print("In Test()")
         self.assertEqual(self.fixture,range(1,6),"test failed")
 
     def tearDown(self):
