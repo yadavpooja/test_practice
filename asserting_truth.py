@@ -5,7 +5,7 @@ class Assertion_truth(unittest.TestCase):
         self.assertTrue(True)
 
     def test_false(self):
-        self.assertFalse(True,"test failed")
+        self.assertFalse(False,"test failed")
 
 if __name__ == "__main__":
     unittest.main()
